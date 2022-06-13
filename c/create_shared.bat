@@ -1,0 +1,1 @@
+gcc -fPIC -shared -o sample.so sample.c

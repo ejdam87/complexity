@@ -4,7 +4,8 @@ from analyse import add_plot, show_plot
 # --- Sample config ---
 
 # --- Assing function to test ---
-from sample import maximum
+from python.sample import maximum         # Python example
+from c.c_wrapper import summation    # C example
 SAMPLE_FUNCTION = maximum
 # ---
 
