@@ -17,6 +17,7 @@ def quadratic(array: List[int]) -> None:
         for b in array:
             res += a
 
+
 def cubic(array: List[int]) -> None:
 
     res = 0
@@ -25,4 +26,15 @@ def cubic(array: List[int]) -> None:
             for c in array:
                 res += c
 
-    return c
+
+def logaritmic(array: List[int]) -> None:
+    
+
+    num = sum(array)
+    res = 0
+
+    while num > 0:
+
+        num //= 2
+        res += num
+

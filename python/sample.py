@@ -11,3 +11,16 @@ def maximum(array: List[int]) -> int:
             mx = array[i]
 
     return mx
+
+
+def is_palindrome(word: str) -> bool:
+    
+    return word == word[::-1]
+
+
+def string_sum(string: str) -> int:
+
+    total = 0
+
+    for char in string:
+        total += ord(char)

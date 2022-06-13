@@ -1,5 +1,6 @@
 from typing import List, Tuple
 import random
+import string
 
 SIZES = range(1, 50)
 
@@ -17,5 +18,15 @@ def generate_integers() -> List[Tuple[int, List[int]]]:
     for size in SIZES:
 
         sample = [random.randint(LOWER, UPPER) for _ in range(size)]
+        
+        yield size, sample
+
+
+def generate_strings() -> List[Tuple[int, List[int]]]:
+
+    for size in SIZES:
+
+        chars = [random.choice(string.printable) for _ in range(size)]
+        sample = "".join(chars)
         
         yield size, sample
